@@ -1,0 +1,33 @@
+.promises-area {
+    display: flex;
+    justify-content: space-between;
+    padding: 5rem 3rem;
+    width: 100%;
+    background-color: #faf3ea;
+}
+
+.promises-area div {
+    display: flex;
+}
+
+.promises-area > div {
+    gap: 1rem;
+}
+
+.promises-area div > div {
+    flex-direction: column;
+    justify-content: space-between;
+    width: max-content;
+}
+
+.promises-area > div > div > h4 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+.promises-area > div > div > p {
+    font-size: 1.1rem;
+    color: #898989;
+    margin: 0;
+}

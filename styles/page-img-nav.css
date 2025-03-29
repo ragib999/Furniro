@@ -1,0 +1,30 @@
+.page-img-nav-area {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 27.3rem;
+    background-color: #ffffff73;
+
+    background-image: url("../assets/images/page-img-nav.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.page-img-nav-area > h1 {
+    margin: 0;
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+.page-img-nav-area > p {
+    margin: 0;
+    margin-top: 0.5rem;
+    font-weight: normal;
+}
+
+.page-img-nav-area > p > b {
+    font-weight: 600;
+}

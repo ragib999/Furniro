@@ -1,0 +1,49 @@
+.header-area {
+    height: 89px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    padding: 1rem 4rem;
+    width: 100%;
+    z-index: 9999;
+    background-color: white;
+}
+
+.nav-area > ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    gap: 5vw;
+}
+
+.nav-area > ul > li {
+    display: inline-block;
+}
+
+.nav-area > ul > li > a {
+    font-size: 1rem;
+    font-weight: 500;
+    transition: color 80ms ease-in-out;
+
+    &:hover {
+        color: #b88e2f;
+    }
+}
+
+.header-right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+}
+
+#hamburger-icon {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+}

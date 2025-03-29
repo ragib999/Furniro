@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Cart</title>
+
+        <!-- Favicon -->
+        <link
+            rel="shortcut icon"
+            href="../assets/icons/favicon.svg"
+            type="image/x-icon"
+        />
+
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- Font Awesome -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+            integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+
+        <link rel="stylesheet" href="../styles/style.css" />
+        <link rel="stylesheet" href="../styles/header.css" />
+        <link rel="stylesheet" href="../styles/footer.css" />
+        <link rel="stylesheet" href="../styles/page-img-nav.css" />
+        <link rel="stylesheet" href="../styles/cart.css" />
+        <link rel="stylesheet" href="../styles/promises.css" />
+    </head>
+    <body>
+        <!-- Header Start -->
+        <header class="header-area">
+            <div class="header">
+                <a href="../index.html"
+                    ><img
+                        src="../assets/icons/website-logo.svg"
+                        alt="Website Logo"
+                        class="header-logo"
+                /></a>
+
+                <!-- Nav Start -->
+                <nav class="nav-area">
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="./shop.html">Shop</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+                <!-- Nav End -->
+
+                <div class="header-right">
+                    <a href="#">
+                        <img
+                            src="../assets/icons/account-icon.svg"
+                            alt="Account Icon"
+                        />
+                    </a>
+                    <a href="#">
+                        <img
+                            src="../assets/icons/seach-icon.svg"
+                            alt="Search Icon"
+                        />
+                    </a>
+                    <a href="#">
+                        <img
+                            src="../assets/icons/heart-icon.svg"
+                            alt="Favorite Icon"
+                        />
+                    </a>
+                    <a href="#">
+                        <img
+                            src="../assets/icons/cart-icon.svg"
+                            alt="Cart Icon"
+                        />
+                    </a>
+                </div>
+                <i class="fa-solid fa-bars" id="hamburger-icon"></i>
+            </div>
+        </header>
+        <!-- Header End -->
+
+        <!-- Cart Page Nav Start -->
+        <section class="page-img-nav-area">
+            <img src="../assets/icons/favicon.svg" alt="Icon" />
+            <h1>Cart</h1>
+            <p>
+                <b
+                    ><a href="../index.html">Home</a> &nbsp;<i
+                        class="fa-solid fa-chevron-right"
+                    ></i></b
+                >&nbsp; Cart
+            </p>
+        </section>
+        <!-- Cart Page Nav End -->
+
+        <!-- Cart Hero Area Start -->
+        <section class="cart-hero-area">
+            <table class="cart-hero-table">
+                <thead>
+                    <tr>
+                        <th colspan="2">Product</th>
+                        <th align="left">Price</th>
+                        <th>Quantity</th>
+                        <th colspan="2" align="left">Subtotal</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <img
+                                src="../assets/images/cart-prod-img.png"
+                                alt="Cart Product"
+                            />
+                        </td>
+                        <td>Asgaard sofa</td>
+                        <td>Rs 250,000.00</td>
+                        <td align="center">
+                            <input
+                                type="number"
+                                name="qty"
+                                id="qty"
+                                value="1"
+                            />
+                        </td>
+                        <td class="cart-prod-subtotal">Rs. 250,000.00</td>
+                        <td class="cart-prod-remove">
+                            <i class="fa-solid fa-trash"></i>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="cart-hero-total-container">
+                <h2>Cart Totals</h2>
+                <div class="cart-hero-subtotal">
+                    <p>Subtotal</p>
+                    <p>Rs. 250,000.00</p>
+                </div>
+                <div class="cart-hero-total">
+                    <p>Total</p>
+                    <p>Rs. 250,000.00</p>
+                </div>
+                <a href="./checkout.html">Check Out</a>
+            </div>
+        </section>
+        <!-- Cart Hero Area End -->
+
+        <!-- Promises Section Start -->
+        <section class="promises-area" style="margin-bottom: 0.5rem">
+            <div>
+                <img
+                    src="../assets/icons/promise-trophy.svg"
+                    alt="Trophy Icon"
+                />
+                <div>
+                    <h4>High Quality</h4>
+                    <p>Crafted from top materials</p>
+                </div>
+            </div>
+
+            <div>
+                <img
+                    src="../assets/icons/promise-verified.svg"
+                    alt="Verified Icon"
+                />
+                <div>
+                    <h4>Warranty Protection</h4>
+                    <p>Over 2 years</p>
+                </div>
+            </div>
+
+            <div>
+                <img
+                    src="../assets/icons/promise-shipping.svg"
+                    alt="Shipping Icon"
+                />
+                <div>
+                    <h4>Free Shipping</h4>
+                    <p>Order over 150 $</p>
+                </div>
+            </div>
+
+            <div>
+                <img
+                    src="../assets/icons/promise-support.svg"
+                    alt="Trophy Icon"
+                />
+                <div>
+                    <h4>24 / 7 Support</h4>
+                    <p>Dedicated support</p>
+                </div>
+            </div>
+        </section>
+        <!-- Promises Section End -->
+
+        <hr />
+
+        <!-- Footer Start -->
+        <footer class="footer-area">
+            <div class="footer-top-container">
+                <div class="footer-top-left">
+                    <h3>Funiro.</h3>
+                    <p>
+                        400 University Drive Suite 200 Coral Gables, FL 33134
+                        USA
+                    </p>
+                </div>
+                <div class="footer-top-right">
+                    <div class="footer-links-container">
+                        <p>Links</p>
+                        <a href="../index.html">Home</a>
+                        <a href="#">Shop</a>
+                        <a href="#">About</a>
+                        <a href="#">Contact</a>
+                    </div>
+                    <div class="footer-help-container">
+                        <p>Help</p>
+                        <a href="#">Payment Options</a>
+                        <a href="#">Returns</a>
+                        <a href="#">Privacy Policies</a>
+                    </div>
+                    <div class="footer-newsletter-container">
+                        <p>Newsletter</p>
+                        <form action="">
+                            <input
+                                type="email"
+                                name="email"
+                                id="email"
+                                placeholder="Enter Your Email Address"
+                            />
+                            <button>Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <hr />
+            <p class="footer-rights">2023 furino. All rights reserved</p>
+        </footer>
+        <!-- Footer End -->
+    </body>
+</html>

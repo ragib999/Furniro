@@ -1,0 +1,115 @@
+.products-main-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 18rem);
+    max-width: 78rem;
+    gap: 2rem;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.products-main-container > div {
+    width: 100%;
+    position: relative;
+    background-color: #f4f5f7;
+}
+
+.products-name {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #3a3a3a;
+    margin: 0.2rem 0 0.2rem 1rem;
+}
+
+.products-description {
+    font-size: 1rem;
+    font-weight: normal;
+    color: #898989;
+    margin: 0 0 0.6rem 1rem;
+}
+
+.products-price {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #3a3a3a;
+    margin: 0 0 0 1rem;
+    padding-bottom: 2rem;
+}
+
+.products-original-price {
+    position: absolute;
+    bottom: 1.1rem;
+    right: 1rem;
+    font-size: 1rem;
+    text-decoration: line-through;
+    font-weight: normal;
+    color: #b0b0b0;
+}
+
+.products-discount {
+    position: absolute;
+    top: 1rem;
+    right: 1.3rem;
+    padding: 0.6rem 0.1rem;
+    border-radius: 50%;
+    font-weight: normal;
+    color: #fff;
+    background-color: #e97171;
+}
+
+.products-new {
+    position: absolute;
+    top: 1rem;
+    right: 1.3rem;
+    padding: 0.6rem 0.3rem;
+    border-radius: 50%;
+    font-weight: normal;
+    color: #fff;
+    background-color: #2ec1ac;
+}
+
+.products-overlay {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: #00000081;
+}
+
+.products-main-container > div:hover .products-overlay {
+    display: flex;
+}
+
+.products-overlay-button {
+    display: inline-block;
+    background-color: #fff;
+    font-weight: 500;
+    color: #b8832f;
+    padding: 0.7rem 3rem;
+    transition: background 150ms ease-in-out, color 150ms ease-in-out;
+
+    &:hover {
+        color: #fff;
+        background-color: #b8832f;
+    }
+}
+
+.products-overlay-interaction-container {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.products-overlay-interaction-container > div > a {
+    color: white;
+    transition: color 100ms ease-in-out;
+
+    &:hover {
+        color: #d2932d;
+    }
+}

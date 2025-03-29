@@ -1,0 +1,135 @@
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.checkout-hero-left-container input,
+select {
+    padding: 1.5rem 1.2rem;
+    border: 1px solid #9f9f9f;
+    border-radius: 0.6rem;
+    font-size: 1rem;
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+}
+
+input[type="radio"]:checked {
+    accent-color: black;
+}
+
+.checkout-hero-area {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    padding: 5rem;
+}
+
+.checkout-hero-left-container {
+    width: 30%;
+}
+
+.checkout-hero-left-container > h2 {
+    font-size: 2.4rem;
+    font-weight: 600;
+    margin: 0 0 1rem 0;
+}
+
+.checkout-hero-left-container > div {
+    display: flex;
+}
+
+.checkout-hero-left-container > div label {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.hero-left-group {
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.hero-left-group > div {
+    flex: 1;
+}
+
+.hero-left-group > div > input {
+    width: 100%;
+}
+
+.checkout-hero-left-container > div:not(.hero-left-group) {
+    flex-direction: column;
+}
+
+.checkout-hero-right-container {
+    width: 30%;
+}
+
+.checkout-hero-right-finalisation-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+}
+
+.checkout-hero-right-finalisation-container > * {
+    margin: 0.5rem 0;
+}
+
+.checkout-hero-right-finalisation-container > h3 {
+    font-weight: 500;
+    font-size: 1.7rem;
+}
+
+.checkout-hero-right-finalisation-container > p {
+    font-weight: normal;
+}
+
+.checkout-hero-right-finalisation-container > p:first-of-type {
+    color: #9f9f9f;
+}
+
+.checkout-hero-right-finalisation-container > p:last-of-type {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #b88e2f;
+}
+
+.checkout-hero-right-finalisation-container *:nth-child(even) {
+    justify-self: end;
+}
+
+#bank-transfer-1 + label {
+    font-weight: normal;
+}
+
+.checkout-hero-right-bank-details {
+    font-weight: 300;
+    color: #9f9f9f;
+}
+
+#bank-transfer-2 + label,
+#cash + label {
+    color: #9f9f9f;
+}
+
+.privacy-policy {
+    font-weight: normal;
+}
+
+.order-placement-btn {
+    display: block;
+    background-color: transparent;
+    width: 18rem;
+    padding: 1rem 0;
+    border: 1px solid #000;
+    border-radius: 0.6rem;
+    margin: 2rem auto 0;
+    font-size: 1.2rem;
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    transition: all 100ms ease-in-out;
+
+    &:hover {
+        background-color: #000;
+        color: #fff;
+    }
+}

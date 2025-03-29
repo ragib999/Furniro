@@ -1,0 +1,85 @@
+.shop-tools-area {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 6rem;
+    background-color: #f9f1e7;
+}
+
+.shop-tools-left-container {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.shop-tools-left-container > p:first-of-type {
+    font-size: 1.2rem;
+    font-weight: normal;
+}
+
+.shop-tools-left-container > img:last-of-type {
+    padding-right: 1rem;
+}
+
+.shop-tools-left-container > p:last-of-type {
+    padding: 0.6rem 0 0.6rem 2.5rem;
+    border-left: 2px solid #9f9f9f;
+    margin: 0;
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+.shop-tools-right-container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.shop-tools-right-container > p {
+    font-size: 1.1rem;
+    font-weight: normal;
+}
+
+.shop-tools-right-container > p:nth-child(even) {
+    padding: 1rem 1.3rem;
+    background-color: #fff;
+    text-align: center;
+    color: #9f9f9f;
+    user-select: none;
+}
+
+.shop-tools-right-container > p:last-child {
+    padding-right: 5rem;
+}
+
+.shop-products-area {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5rem 0;
+}
+
+.shop-products-pagination {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    margin-top: 4rem;
+}
+
+.shop-products-pagination > div {
+    padding: 1rem 1.5rem;
+    border-radius: 0.5rem;
+    background-color: #f9f1e7;
+    cursor: pointer;
+
+    &:hover {
+        background-color: #b88e2f;
+        color: #fff;
+    }
+}
+
+.shop-products-pagination > div:first-child {
+    background-color: #b88e2f;
+    color: #fff;
+}

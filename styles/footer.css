@@ -1,0 +1,88 @@
+.footer-area {
+    padding: 2rem 5rem;
+}
+
+.footer-top-container {
+    display: flex;
+    gap: 2rem;
+}
+
+.footer-top-left {
+    display: flex;
+    flex-direction: column;
+    width: 20rem;
+    min-width: 20rem;
+}
+
+.footer-top-left > h3 {
+    font-size: 1.5rem;
+    margin-top: 0;
+    margin-bottom: 3rem;
+}
+
+.footer-top-left > p {
+    font-size: 1rem;
+    color: #9f9f9f;
+}
+
+.footer-top-right {
+    display: flex;
+    gap: 10vw;
+    margin-left: 11vw;
+}
+
+.footer-top-right > div > p {
+    margin: 0;
+}
+
+.footer-links-container,
+.footer-help-container,
+.footer-newsletter-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    & > p {
+        padding-bottom: 1rem;
+        color: #9f9f9f;
+    }
+
+    & > a:hover {
+        color: #b88e2f;
+    }
+}
+
+#email {
+    border: 0;
+    border-bottom: 1px solid #000;
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+
+    &:focus {
+        outline: 0;
+    }
+}
+
+#email + button {
+    background-color: transparent;
+    border: 0;
+    font-weight: 500;
+    border-bottom: 1px solid #000;
+    text-transform: uppercase;
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    transition: all 100ms ease-in-out;
+
+    &:hover {
+        background-color: #000;
+        color: #fff;
+    }
+}
+
+.footer-area > hr {
+    margin-top: 2rem;
+}
+
+.footer-rights {
+    margin-top: 2rem;
+    font-weight: 400;
+}
