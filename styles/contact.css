@@ -1,0 +1,80 @@
+.contact-hero-area {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    padding: 4rem 5rem;
+}
+
+.contact-hero-left {
+    display: grid;
+    grid-template-columns: 3rem 1fr;
+    row-gap: 2rem;
+    width: 15%;
+    min-height: 10rem;
+}
+
+.contact-hero-left > img {
+    position: relative;
+    top: 0.3rem;
+}
+
+.contact-hero-left > div > h2 {
+    font-weight: 500;
+    margin: 0;
+}
+
+.contact-hero-left > div > p {
+    font-weight: normal;
+    margin: 0;
+}
+
+.contact-hero-right {
+    width: 30%;
+}
+
+.contact-hero-right > form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-hero-right > form > input {
+    padding: 1.5rem 1.2rem;
+    margin-bottom: 1rem;
+    border: 1px solid #9f9f9f;
+    border-radius: 0.6rem;
+    font-size: 1rem;
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+}
+
+#message {
+    resize: none;
+    height: 10rem;
+    padding: 1.5rem 1.2rem;
+    margin-bottom: 2rem;
+    border: 1px solid #9f9f9f;
+    border-radius: 0.6rem;
+    font-size: 1rem;
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+}
+
+#message::placeholder {
+    color: #9f9f9f;
+}
+
+.contact-hero-right button {
+    width: 15rem;
+    padding: 1rem 0;
+    font-size: 1rem;
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+    border: 2px solid #b88e2f;
+    border-radius: 0.3rem;
+    background-color: #b88e2f;
+    color: #fff;
+    cursor: pointer;
+    transition: all 100ms ease-in-out;
+
+    &:hover {
+        background-color: transparent;
+        color: #b88e2f;
+    }
+}

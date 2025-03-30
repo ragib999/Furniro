@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Cart</title>
+        <title>Contact</title>
 
         <!-- Favicon -->
         <link
@@ -32,8 +32,8 @@
         <link rel="stylesheet" href="../styles/style.css" />
         <link rel="stylesheet" href="../styles/header.css" />
         <link rel="stylesheet" href="../styles/footer.css" />
+        <link rel="stylesheet" href="../styles/contact.css" />
         <link rel="stylesheet" href="../styles/page-img-nav.css" />
-        <link rel="stylesheet" href="../styles/cart.css" />
         <link rel="stylesheet" href="../styles/promises.css" />
     </head>
     <body>
@@ -53,7 +53,7 @@
                         <li><a href="../index.html">Home</a></li>
                         <li><a href="./shop.html">Shop</a></li>
                         <li><a href="./blog.html">About</a></li>
-                        <li><a href="./contact.html">Contact</a></li>
+                        <li><a href="#">Contact</a></li>
                     </ul>
                 </nav>
                 <!-- Nav End -->
@@ -77,83 +77,96 @@
                             alt="Favorite Icon"
                         />
                     </a>
-                    <a href="#">
-                        <img
+                    <a href="./cart.html"
+                        ><img
                             src="../assets/icons/cart-icon.svg"
                             alt="Cart Icon"
-                        />
-                    </a>
+                    /></a>
                 </div>
                 <i class="fa-solid fa-bars" id="hamburger-icon"></i>
             </div>
         </header>
         <!-- Header End -->
 
-        <!-- Cart Page Nav Start -->
+        <!-- Contact Page Nav Start -->
         <section class="page-img-nav-area">
             <img src="../assets/icons/favicon.svg" alt="Icon" />
-            <h1>Cart</h1>
+            <h1>Contact</h1>
             <p>
                 <b
                     ><a href="../index.html">Home</a> &nbsp;<i
                         class="fa-solid fa-chevron-right"
                     ></i></b
-                >&nbsp; Cart
+                >&nbsp; Contact
             </p>
         </section>
-        <!-- Cart Page Nav End -->
+        <!-- Contact Page Nav End -->
 
-        <!-- Cart Hero Area Start -->
-        <section class="cart-hero-area">
-            <table class="cart-hero-table">
-                <thead>
-                    <tr>
-                        <th colspan="2">Product</th>
-                        <th align="left">Price</th>
-                        <th>Quantity</th>
-                        <th colspan="2" align="left">Subtotal</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>
-                            <img
-                                src="../assets/images/cart-prod-img.png"
-                                alt="Cart Product"
-                            />
-                        </td>
-                        <td>Asgaard sofa</td>
-                        <td>Rs 250,000.00</td>
-                        <td align="center">
-                            <input
-                                type="number"
-                                name="qty"
-                                id="qty"
-                                value="1"
-                            />
-                        </td>
-                        <td class="cart-prod-subtotal">Rs. 250,000.00</td>
-                        <td class="cart-prod-remove">
-                            <i class="fa-solid fa-trash"></i>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
+        <!-- Contact Hero Area Start -->
+        <section class="contact-hero-area">
+            <div class="contact-hero-left">
+                <img
+                    src="../assets/icons/address-pin-icon.svg"
+                    alt="Address Pin"
+                />
+                <div>
+                    <h2>Address</h2>
+                    <p>256 5th SE Avenue, New York NY10000, United States</p>
+                </div>
 
-            <div class="cart-hero-total-container">
-                <h2>Cart Totals</h2>
-                <div class="cart-hero-subtotal">
-                    <p>Subtotal</p>
-                    <p>Rs. 250,000.00</p>
+                <img src="../assets/icons/phone-icon.svg" alt="Phone" />
+                <div>
+                    <h2>Phone</h2>
+                    <p>Mobile: +(84) 546-6789</p>
+                    <p>Hotline: +(84) 546-6789</p>
                 </div>
-                <div class="cart-hero-total">
-                    <p>Total</p>
-                    <p>Rs. 250,000.00</p>
+
+                <img src="../assets/icons/work-time-icon.svg" alt="Work Time" />
+                <div>
+                    <h2>Working Time</h2>
+                    <p>Monday-Friday: 9:00-22:00</p>
+                    <p>Saturday-Sunday: 9:00-21:00</p>
                 </div>
-                <a href="./checkout.html">Check Out</a>
+            </div>
+
+            <div class="contact-hero-right">
+                <form>
+                    <p>Your Name</p>
+                    <input
+                        type="text"
+                        name="name"
+                        id="name"
+                        placeholder="Abc"
+                    />
+
+                    <p>Email Address</p>
+                    <input
+                        type="email"
+                        name="email-address"
+                        id="email-address"
+                        placeholder="Abc@def.com"
+                    />
+
+                    <p>Subject</p>
+                    <input
+                        type="text"
+                        name="subject"
+                        id="subject"
+                        placeholder="This is optional"
+                    />
+
+                    <p>Message</p>
+                    <textarea
+                        name="message"
+                        id="message"
+                        placeholder="Hi! i'd like to ask about"
+                    ></textarea>
+
+                    <button type="submit">Submit</button>
+                </form>
             </div>
         </section>
-        <!-- Cart Hero Area End -->
+        <!-- Contact Hero Area End -->
 
         <!-- Promises Section Start -->
         <section class="promises-area" style="margin-bottom: 0.5rem">
@@ -203,7 +216,7 @@
         </section>
         <!-- Promises Section End -->
 
-        <hr />
+        <hr style="margin-top: 2rem" />
 
         <!-- Footer Start -->
         <footer class="footer-area">
