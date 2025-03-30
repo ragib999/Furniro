@@ -1,0 +1,172 @@
+.blog-hero-area {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    gap: 2rem;
+    padding: 5rem;
+}
+
+.blog-left-post-details {
+    display: flex;
+    gap: 2rem;
+}
+
+.blog-left-post-details > div {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: #9f9f9f;
+}
+
+.blog-hero-left-post:not(:last-child) {
+    margin-bottom: 3rem;
+}
+
+.blog-hero-left-post > h2 {
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin: 0;
+}
+
+.blog-hero-left-post > p {
+    width: 51.1rem;
+    text-align: justify;
+    font-weight: normal;
+    font-size: 0.9rem;
+    color: #9f9f9f;
+}
+
+.border-left-post-link {
+    position: relative;
+    display: inline-block;
+    margin: 1rem 0;
+}
+
+.border-left-post-link:hover::after {
+    width: 6rem;
+    left: -0.3rem;
+    transition: all 100ms ease-in-out;
+}
+
+.border-left-post-link::after {
+    content: "";
+    position: absolute;
+    height: 0.1rem;
+    width: 5rem;
+    background-color: #000;
+    top: 2rem;
+    left: 0.2rem;
+}
+
+.blog-hero-right {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 23rem;
+}
+
+.search-bar-container {
+    position: relative;
+}
+
+.search-bar-container > img {
+    position: absolute;
+    top: 1.2rem;
+    right: 0.7rem;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 1.3rem 1.2rem;
+    margin-bottom: 1rem;
+    border: 1px solid #9f9f9f;
+    border-radius: 0.6rem;
+    font-size: 1rem;
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+}
+
+.blog-hero-right h3 {
+    font-weight: 500;
+    font-size: 1.6rem;
+}
+
+.blog-hero-right-categories-container,
+.blog-hero-right-recent-posts-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.blog-hero-right-categories-container {
+    margin-bottom: 3rem;
+}
+
+.blog-hero-right-categories-container > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.blog-hero-right-categories-container div > p,
+.blog-hero-right-categories-container div > a {
+    font-weight: normal;
+    color: #9f9f9f;
+    transition: color 100ms ease-in-out;
+}
+
+.blog-hero-right-categories-container div > a:hover {
+    color: #000;
+}
+
+.blog-hero-right-recent-posts-container {
+    padding: 0 5rem 0 0;
+    gap: 2rem;
+}
+
+.blog-hero-right-recent-posts-container > div {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.recent-post-title {
+    font-weight: 500;
+    font-size: 0.9rem;
+    margin: 0;
+    transition: color 100ms ease-in-out;
+
+    &:hover {
+        color: #b88e2f;
+    }
+}
+
+.recent-post-time {
+    font-weight: normal;
+    font-size: 0.8rem;
+    margin: 0;
+    color: #9f9f9f;
+}
+
+.blog-pagination {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    margin-bottom: 3rem;
+}
+
+.blog-pagination > div {
+    padding: 1rem 1.6rem;
+    border-radius: 0.5rem;
+    background-color: #f9f1e7;
+    cursor: pointer;
+
+    &:hover {
+        background-color: #b88e2f;
+        color: #fff;
+    }
+}
+
+.blog-pagination > div:first-child {
+    background-color: #b88e2f;
+    color: #fff;
+}
